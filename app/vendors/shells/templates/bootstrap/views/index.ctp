@@ -59,9 +59,9 @@
 
         <div class="pagination">
             <ul>
-            <?php echo "\t<?php echo \$this->Paginator->prev('&larr; '.__('Previous', true), array('tag'=>'li','class'=>'prev', 'escape'=>false), '<a href=\"#\">&larr; <?php __('Previous'); ?></a>', array('tag'=>'li','class'=>'prev disabled', 'escape'=>false));?>\n";?>
+            <?php echo "\t<?php echo \$this->Paginator->prev('&larr; '.__('Previous', true), array('tag'=>'li','class'=>'prev', 'escape'=>false), '<a href=\"#\">&larr; '.__('Previous',true).'</a>', array('tag'=>'li','class'=>'prev disabled', 'escape'=>false));?>\n";?>
             <?php echo "\t<?php echo \$this->Paginator->numbers(array('tag'=>'li','separator'=>'','disabled'=>'active'));?>\n"?>
-            <?php echo "\t<?php echo \$this->Paginator->next(__('Next', true).' &rarr;', array('tag'=>'li','class'=>'next','escape'=>false), '<a href=\"#\"><?php __('Next'); ?></a> &rarr;</a>', array('tag'=>'li','class' => 'next disabled', 'escape'=>false));?>\n";?>
+            <?php echo "\t<?php echo \$this->Paginator->next(__('Next', true).' &rarr;', array('tag'=>'li','class'=>'next','escape'=>false), '<a href=\"#\">'.__('Next', true).' &rarr;</a>', array('tag'=>'li','class' => 'next disabled', 'escape'=>false));?>\n";?>
             </ul>
         </div>
         <div class="well">
